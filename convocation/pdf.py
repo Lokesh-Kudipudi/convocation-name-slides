@@ -115,7 +115,7 @@ def create_pdf_from_pdf_pages(
         print(f"Processing page for student {roll_no}...")
         photo = find_photo(roll_no, image_folder)
         if not photo:
-            print(f"❌ Photo not found for {roll_no}, skipping page...")
+            print(f"Photo not found for {roll_no}, skipping page...")
             continue
             
         try:
@@ -136,6 +136,6 @@ def create_pdf_from_pdf_pages(
             save_all=True,
             append_images=output_images[1:]
         )
-        print(f"✅ PDF created: {output_pdf}")
+        print(f"PDF created: {output_pdf}")
     else:
-        print("⚠️ No output PDF created. Check image paths and CSV.")
+        print("No output PDF created. Check image paths and CSV.")
